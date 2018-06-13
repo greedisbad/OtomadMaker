@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>otomad maker</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="https://cdn.bootcss.com/jquery/1.10.1/jquery.min.js"></script>
+		<script src="js/myJs.js"></script>
+		<script type="text/javascript" src="js/rotate3Di.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/myCSS.css" />
+		<link rel="icon" href="img/myICO.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="/img/myICO.ico" type="image/x-icon" />
+	</head>
+
+	<body>
+		<div onselectstart="return false;">
+			<div class="rows"></div>
+			<div class="rows" style="height: 92px;">
+				<div id='btn1' class="button">
+					<p>Q</p>
+				</div>
+				<div id='btn7' class="button">
+					<p>U</p>
+				</div>
+			</div>
+
+			<div class="rows" style="height: 66px;">
+				<div id='btn2' class="button">
+					<p>W</p>
+				</div>
+				<div id='btn6' class="button">
+					<p>Y</p>
+				</div>
+			</div>
+
+			<div class="rows">
+				<div id='btn3' class="button">
+					<p>E</p>
+				</div>
+				<div id='btn5' class="button">
+					<p>T</p>
+				</div>
+			</div>
+
+			<div style="position: absolute;	top: 265px;	left: 48%;">
+				<div id='btn4' class="button">
+					<p>R</p>
+				</div>
+			</div>
+
+			<p><img src="img/VAN.png" /></p>
+			<!--<img src="timg.jpg" />-->
+		</div>
+
+		<div id='hideEle'>
+			<p id='a'></p>
+			<p id='a1'></p>
+
+			<p id='b'></p>
+			<p id='b1'></p>
+			<p id='c'></p>
+			<p id='d'></p>
+		</div>
+		<div class=menu>
+			<p style="width: 20%; display: inline-block; color: white;">音符长度</p>
+			<p style="width: 20%; display: inline-block; color: white;">简谱</p>
+			</br>
+			<input id='speed' style="width: 20%; border: 0;padding-left: 2px;" value="150" onchange="isNumber(this)">
+
+			<select id="select" style="width: 20%;display: inline-block;" onchange="selectMusic(this)">
+
+				<option>cirno</option>
+				<option>甩葱歌</option>
+				<option>欢乐颂</option>
+				<option>康康舞曲</option>
+				<option>Entrance</option>
+				<option>Undertale</option>
+				<option>俄罗斯方块</option>
+				<option>思出亿千万</option>
+				<option>Lost Woods</option>
+				<option>lisa-riccia</option>
+				<option>宾克斯的美酒</option>
+				<option>Sis puella magica!</option>
+				<option>???</option>
+			</select>
+			<p id='playBtn' onclick="playmusic()">play</p>
+			<hr style="width:90%;text-align:center;" />
+			<textarea id="music" style="height: 100px;width: 90%;resize: none;border-radius:5px" spellcheck="false">werty--yryrew--- wry2--2121ty-----2-4--4346352u52u3-42y431t33--22wery--yryrew--- wry2--2121ty-----2-4--4346352u52u3-42y431t33--22</textarea>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,127 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-image: url('../img/backgroud.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.button {
+	cursor: pointer;
+	color: rgba(255, 255, 255, 1);
+	text-decoration: none;
+	background-color: rgba(219, 87, 5, 1);
+	font-weight: 500;
+	font-size: 2em;
+	display: block;
+	padding: 4px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-box-shadow: 0px 9px 0px rgba(219, 31, 5, 1), 0px 9px 25px rgba(0, 0, 0, .7);
+	-moz-box-shadow: 0px 9px 0px rgba(219, 31, 5, 1), 0px 9px 25px rgba(0, 0, 0, .7);
+	box-shadow: 0px 9px 0px rgba(219, 31, 5, 1), 0px 9px 25px rgba(0, 0, 0, .7);
+	width: 70px;
+	height: 50px;
+	text-align: center;
+	-webkit-transition: all .1s ease;
+	-moz-transition: all .1s ease;
+	-ms-transition: all .1s ease;
+	-o-transition: all .1s ease;
+	transition: all .1s ease;
+}
+
+.button:active {
+	-webkit-box-shadow: 0px 3px 0px rgba(219, 31, 5, 1), 0px 3px 6px rgba(0, 0, 0, .9);
+	-moz-box-shadow: 0px 3px 0px rgba(219, 31, 5, 1), 0px 3px 6px rgba(0, 0, 0, .9);
+	box-shadow: 0px 3px 0px rgba(219, 31, 5, 1), 0px 3px 6px rgba(0, 0, 0, .9);
+	position: relative;
+	top: 6px;
+}
+
+.button p {
+	position: relative;
+	transform: scale(1, 0.7);
+}
+
+#btn1 {
+	float: left;
+	margin-left: 23%;
+}
+
+#btn7 {
+	float: right;
+	margin-right: 23%;
+}
+
+#btn2 {
+	float: left;
+	margin-left: 29%;
+}
+
+#btn6 {
+	float: right;
+	margin-right: 29%;
+}
+
+#btn3 {
+	float: left;
+	margin-left: 37%;
+}
+
+#btn5 {
+	float: right;
+	margin-right: 37%;
+}
+
+img {
+	z-index: -1;
+	width: 160px;
+	height: 320px;
+	position: absolute;
+	top: 20px;
+	left: 44%;
+}
+
+.rows {
+	height: 80px;
+}
+
+#hideEle {
+	display: none;
+}
+
+.menu {
+	box-shadow: 0 0 5px;
+	background-color: rgba(0, 0, 0, 0.2);
+	width: 30%;
+	margin: 0 auto;
+	margin-top: 100px;
+	border-radius: 15px;
+	padding: 10px 0;
+}
+
+.menu * {
+	border-radius: 4px;
+	margin: 2px 5%;
+	opacity: 0.8;
+	font-size: medium;
+	font-family: "microsoft yahei";
+}
+
+#playBtn {
+	text-align: center;
+	cursor: pointer;
+	background-color: white;
+	width: 20%;
+	display: inline-block;
+	transition: all .5s ease;
+}
+#playBtn:hover{
+	background-color: coral;
+}
