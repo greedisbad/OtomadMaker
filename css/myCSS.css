@@ -2,8 +2,26 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
+
+input {
+	-webkit-user-select: auto;
+	-moz-user-select: auto;
+	-ms-user-select: auto;
+	user-select: auto;
+}
+
+textarea {
+	-webkit-user-select: auto;
+	-moz-user-select: auto;
+	-ms-user-select: auto;
+	user-select: auto;
+}
 body {
 	background-image: url('../img/backgroud.jpg');
 	background-repeat: no-repeat;
